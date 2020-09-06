@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#D6E4E0">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/walmart_logo"
+        />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign in to your account "
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorAccent"
+        android:background="#0089BCD1"
+        android:textSize="20sp"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#23536C39"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/emailTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email address(required)" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <EditText
+            android:id="@+id/edit_Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter your email"
+            android:inputType="textPersonName" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+        <TextView
+            android:id="@+id/text_Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password(required)" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+        <EditText
+            android:id="@+id/edit_Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter your password"
+            android:inputType="textPersonName" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+
+        <TextView
+            android:id="@+id/text_ForgotPwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="Forgot password?" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+        <Button
+            android:id="@+id/btn_Signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2196F3"
+            android:text="Sign in"
+            android:textColor="#FFFFFF" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/text_CreateAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Don't have an account?" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+        <Button
+            android:id="@+id/btnCreateAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create a new account" />
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

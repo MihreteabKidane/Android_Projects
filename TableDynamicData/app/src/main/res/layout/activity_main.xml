@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:stretchColumns="*"
+        android:id="@+id/layout_main">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_span="2"
+            android:text="Add Data Dynamically"
+            android:textSize="20sp"
+            android:typeface="sans"
+            android:background="@color/colorAccent"/>
+
+
+        <EditText
+            android:id="@+id/android_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Android Code Name"/>
+
+        <EditText
+            android:id="@+id/android_codeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Android Code Name"/>
+
+
+        <Button android:id="@+id/add_button"
+            android:text="Add"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:onClick="click"/>
+
+        <TableRow android:background="#00FF22"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:text="version"
+                android:layout_marginRight="2dp"/>
+            <TextView
+                android:text="Code Name"/>
+        </TableRow>
+        <TableRow android:background="#FFC107"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:text="Android 5.0"
+                android:layout_marginRight="2dp"/>
+            <TextView
+                android:text="Lollipop"/>
+        </TableRow>
+        <TableRow android:background="#FFC107" android:layout_marginBottom="10dp">
+            <TextView
+                android:text="Android 4.0"/>
+            <TextView
+                android:text="Sandwich"/>
+        </TableRow>
+
+
+    </TableLayout>
+</ScrollView>
